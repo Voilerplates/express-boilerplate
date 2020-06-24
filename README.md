@@ -29,6 +29,8 @@ npm start
 ```
 and you're done!
 
+See the server running at http://localhost:80
+
 ```css
 Happy Coding!
 ```
