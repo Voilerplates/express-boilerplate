@@ -6,6 +6,9 @@ const bodyParser = require("body-parser")
 const fs = require("fs");
 const path = require("path");
 
+if(process.env.NODE_ENV !== 'production')
+    require("dotenv").config()
+
 /* Write Stream for Morgan Logs */
 const morganLogs = fs.createWriteStream(path.join(__dirname, "../logs/web.log"));
 
